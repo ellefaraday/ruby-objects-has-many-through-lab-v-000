@@ -10,6 +10,7 @@ attr_reader :name, :songs, :genres
   def add_song(song)
     @songs << song
     song.artist = self
+    @genres << song.genre
   end
 
 end
