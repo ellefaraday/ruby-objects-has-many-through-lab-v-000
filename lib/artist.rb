@@ -1,3 +1,4 @@
+require"pry"
 class Artist
 attr_reader :name, :songs, :genres
 
@@ -11,6 +12,7 @@ attr_reader :name, :songs, :genres
     @songs << song
     song.artist = self
     @genres << song.genre
+    binding.pry
     song.genre.artists << self
   end
 
