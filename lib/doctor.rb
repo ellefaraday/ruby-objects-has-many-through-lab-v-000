@@ -10,5 +10,4 @@ attr_accessor :name, :appointments
     @appointments << appointment
     appointment.doctor = self
   end
-
 end
